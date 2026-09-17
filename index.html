@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hồn Việt — Cổ tích &amp; Danh tướng</title>
+<meta name="description" content="Kho tàng cổ tích Việt Nam và những vị danh tướng đã làm nên lịch sử dân tộc.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23DA251D'/%3E%3Cpolygon points='50,18 61,55 30,33 70,33 39,55' fill='%23FFCD00'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Bỏ qua đến nội dung chính</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="4" fill="#DA251D"/><polygon points="20,7 24.5,20.5 12,12.6 28,12.6 15.5,20.5" fill="#FFCD00"/></svg>
+      </span>
+      <span class="brand-text">Hồn&nbsp;Việt</span>
+    </a>
+    <nav class="main-nav" aria-label="Điều hướng chính">
+      <a href="#co-tich">Cổ tích</a>
+      <a href="#danh-tuong">Danh tướng</a>
+      <a href="#ve-du-an">Về trang</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Mở menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav id="mobileNav" class="mobile-nav" aria-label="Điều hướng di động">
+    <a href="#co-tich">Cổ tích</a>
+    <a href="#danh-tuong">Danh tướng</a>
+    <a href="#ve-du-an">Về trang</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <svg class="drum-pattern" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+        <g fill="none" stroke="#FFCD00" stroke-width="1">
+          <circle cx="400" cy="400" r="120" opacity="0.14"/>
+          <circle cx="400" cy="400" r="180" opacity="0.11"/>
+          <circle cx="400" cy="400" r="240" opacity="0.09"/>
+          <circle cx="400" cy="400" r="300" opacity="0.07"/>
+          <circle cx="400" cy="400" r="360" opacity="0.05"/>
+        </g>
+        <polygon points="400,340 424,392 476,384 440,420 452,472 400,444 348,472 360,420 324,384 376,392" fill="#FFCD00" opacity="0.18"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Kho tàng truyền thuyết dân tộc</p>
+      <div class="hero-title-stage" id="heroTitleStage">
+        <h1 class="hero-title" id="heroTitle" aria-label="Hồn Việt">
+          <span class="line" data-line="1">Hồn</span>
+          <span class="line" data-line="2">Việt</span>
+        </h1>
+      </div>
+      <p class="hero-sub">Từ tiếng trống đồng vang vọng ngàn năm đến những trang cổ tích bà kể cháu nghe — nơi lưu giữ chuyện Thánh Gióng nhổ tre đánh giặc, chuyện Trần Hưng Đạo ba lần phá quân Nguyên, và bao vị anh hùng đã đắp nên hình hài đất nước.</p>
+      <div class="hero-actions">
+        <a href="#co-tich" class="btn btn-primary">Đọc chuyện cổ tích</a>
+        <a href="#danh-tuong" class="btn btn-ghost">Gặp gỡ danh tướng</a>
+      </div>
+    </div>
+
+    <a href="#co-tich" class="scroll-cue" aria-label="Cuộn xuống xem nội dung">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ CỔ TÍCH ============ -->
+  <section class="tales" id="co-tich">
+    <div class="section-inner">
+      <header class="section-head">
+        <h2>Cổ tích Việt Nam</h2>
+        <p>Những câu chuyện được kể qua bao thế hệ, gói trong đó bài học làm người và cốt cách dân tộc.</p>
+      </header>
+
+      <div class="card-grid" id="taleGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ DANH TƯỚNG ============ -->
+  <section class="generals" id="danh-tuong">
+    <div class="hero-bg generals-bg" aria-hidden="true">
+      <svg class="drum-pattern" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+        <g fill="none" stroke="#FFCD00" stroke-width="1">
+          <circle cx="700" cy="120" r="160" opacity="0.06"/>
+          <circle cx="60" cy="680" r="220" opacity="0.05"/>
+        </g>
+      </svg>
+    </div>
+    <div class="section-inner">
+      <header class="section-head section-head-light">
+        <h2>Danh tướng trong lịch sử</h2>
+        <p>Những người đã cầm quân giữ nước, viết nên các mốc son không thể phai của dân tộc Việt.</p>
+      </header>
+
+      <ol class="timeline" id="timeline"></ol>
+    </div>
+  </section>
+
+  <!-- ============ VỀ TRANG ============ -->
+  <section class="about" id="ve-du-an">
+    <div class="section-inner about-inner">
+      <h2>Về trang này</h2>
+      <p>Hồn Việt là một trang tổng hợp phi lợi nhuận, ra đời để lưu lại — theo cách dễ đọc, dễ chia sẻ — những câu chuyện cổ tích và những trang sử vốn đã ăn sâu vào ký ức người Việt. Nội dung được biên soạn lại ngắn gọn từ các truyền thuyết và sự kiện lịch sử được ghi nhận rộng rãi; mọi góp ý bổ sung tư liệu đều được hoan nghênh.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ MODAL CHI TIẾT ============ -->
+<dialog id="detailDialog" class="detail-dialog">
+  <div class="detail-inner">
+    <button class="detail-close" id="detailClose" aria-label="Đóng">&times;</button>
+    <p class="detail-kicker" id="detailKicker"></p>
+    <h3 class="detail-title" id="detailTitle"></h3>
+    <p class="detail-meta" id="detailMeta"></p>
+    <div class="detail-body" id="detailBody"></div>
+  </div>
+</dialog>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="4" fill="#DA251D"/><polygon points="20,7 24.5,20.5 12,12.6 28,12.6 15.5,20.5" fill="#FFCD00"/></svg>
+      </span>
+      <span>Hồn&nbsp;Việt</span>
+    </div>
+    <p class="footer-note">Được giữ gìn và kể lại vì một lẽ giản dị: dân tộc nào quên chuyện xưa, dân tộc ấy đánh mất một phần cội rễ của mình.</p>
+    <p class="footer-copy">© <span id="year"></span> Hồn Việt · Trang tổng hợp phi lợi nhuận</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
